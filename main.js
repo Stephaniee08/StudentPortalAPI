@@ -1,7 +1,7 @@
-require ('dotenv').config();
-const express=require("express")
-const mongoose = require('mongoose');
-const studentRoute =require("./routes/studentRoutes.js")
+import 'dotenv/config'
+import express from 'express';
+import mongoose from 'mongoose';
+import studentRoute from './routes/studentRoutes.js';
 
 mongoose.connect(process.env.MONGO_URI)
 .then(()=> console.log ("MongoDB Connected"))
